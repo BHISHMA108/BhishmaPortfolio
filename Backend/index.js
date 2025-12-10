@@ -1,5 +1,5 @@
 import express from 'express';
-import formRoutes from '../routes/formRoute.js';
+import formRoutes from './routes/formRoute.js';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import cors from 'cors';
