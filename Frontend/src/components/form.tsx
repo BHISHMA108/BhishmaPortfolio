@@ -47,7 +47,7 @@ const Form = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:3000/api/form", formData);
+      const response = await axios.post("https://bhishmaportfolio.onrender.com/api/form", formData);
 
       if (response.status === 200) {
         alert("Form submitted successfully!");
