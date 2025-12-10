@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Google Sans";
+  src: url("./fonts/googleFont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helios";
+  src: url("./fonts/HeliosExt-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cur";
+  src: url("./fonts/PinyonScript-Regular.ttf") format("truetype");
+}
+
+/* Custom utility classes */
+.font-google {
+  font-family: "Google Sans", sans-serif;
+}
+
+.font-helios {
+  font-family: "Helios", sans-serif;
+}
+
+.font-cur {
+  font-family: "Cur", cursive;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slide 78s linear infinite;
+}
+
+@keyframes cursor {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+    scale: 2;
+  }
+
+  25% {
+    transform: translate(-30%, 10%) rotate(-10deg); /* left + slightly down + tilt */
+  }
+
+  50% {
+    transform: translate(0%, 20%) rotate(5deg);    /* center + lower + small rotation */
+    scale: 1.2;
+  }
+
+  75% {
+    transform: translate(30%, 10%) rotate(10deg);  /* right + slightly up + tilt */
+  }
+
+  100% {
+    transform: translate(0%, 0%) rotate(0deg);     /* back to start */
+    scale: 2;
+  }
+}
+
+.r-cursor {
+  animation: cursor 6s ease-in-out infinite;
+}
+
+
+
+/* Tailwind import */
+@import "tailwindcss";
