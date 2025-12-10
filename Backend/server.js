@@ -1,30 +1,29 @@
-import express from  'express';
+import express from 'express';
 import formRoutes from './routes/formRoute.js';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import axios from 'axios';
 import cors from 'cors';
 
 dotenv.config();
 
 const app = express();
 
-app.use(cors({
-  origin: 'http://localhost:5173', // frontend origin
-  methods: ['GET','POST'],
-}));
+// Allow all origins on serverless (or specify your domain)
+app.use(cors());
 app.use(express.json());
 
-app.use('/api',formRoutes);
+app.use('/api', formRoutes);
 
-
-const PORT = process.env.PORT;
+// DB connection
 const MONGO_URI = process.env.MONGO_URI;
 
-mongoose.connect(MONGO_URI)
-  .then(() => console.log("✅ The Database Portfolio_Users connected successfully"))
-  .catch((err) => console.log("❌ Error in DB connection", err));
+if (!mongoose.connection.readyState) {
+  mongoose.connect(MONGO_URI)
+    .then(() => console.log("Connected to DB"))
+    .catch(err => console.log("DB Error:", err));
+}
 
-app.listen(PORT, ()=>{
-    console.log(`🔱💗 The server is running on the port ${PORT}💗🔱`);
-})
+// ❌ DO NOT USE app.listen()
+// ❌ Serverless functions can't listen on a port
+
+export default app;
