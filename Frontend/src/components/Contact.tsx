@@ -11,7 +11,9 @@ function Contacts() {
       <h1 className="z-10 text-5xl lg:text-5xl font-medium font-google text-black relative mt-12">
         Contacts
       </h1>
-      <div className="relative z-10 flex flex-col pt-[20px] rounded-lg py-4 gap-2">
+      <div className="relative z-10 flex justify-center flex-col pt-[20px] rounded-lg py-4 gap-2">
+        <div className="flex gap-2 justify-start items-center">
+        <img className=" w-9 h-9" src="/email.png" alt="" />
         <p className="text-blue-900">
           <span className="lg:text-[21px] text-[16px] font-bold gap-2 text-black">
             Email:
@@ -24,6 +26,9 @@ function Contacts() {
             uday.dandekar.dev@gmail.com
           </a>
         </p>
+        </div>
+        <div className="flex gap-2 justify-start items-center">
+        <img className=" w-9 h-9" src="/github.png" alt="" />
         <p className="text-blue-900">
           <span className="font-bold text-[16px] lg:text-[21px] text-black">
             Github:{" "}
@@ -36,6 +41,9 @@ function Contacts() {
             https://github.com/BHISHMA108
           </a>
         </p>
+        </div>
+        <div className="flex gap-2 justify-start items-center">
+        <img className=" w-9 h-9" src="/linkedin.png" alt="" />
         <p className="text-blue-900">
           <span className="font-bold text-[16px] lg:text-[21px] text-black">
             LinkedIn:{" "}
@@ -48,6 +56,9 @@ function Contacts() {
             https://www.linkedin.com/in/uday-dandekar/
           </a>
         </p>
+        </div>
+        <div className="flex gap-2 justify-start items-center">
+        <img className=" w-9 h-9" src="/portfolio.png" alt="" />
         <p className="text-blue-900">
           <span className="font-bold text-[16px] lg:text-[21px] text-black">
             Portfolio:{" "}
@@ -60,6 +71,7 @@ function Contacts() {
             Bhishma's Portfolio Website
           </a>
         </p>
+        </div>
       </div>
 
       <div
