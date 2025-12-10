@@ -70,7 +70,7 @@ const Experience = () => {
           {/* Experience Block 4 */}
           <div className="group relative overflow-hidden flex flex-col justify-center min-h-[250px] md:min-h-[350px] text-black rounded pr-5 bg-cover border-transparent hover:border-t-2 hover:border-b-2 hover:border-pink-700 transition-all duration-700 ease-in-out">
             <div className="absolute inset-0 bg-[url('/gsa.png')] bg-cover bg-center opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-700 ease-in-out"></div>
-            <div className="relative   px-5 md:px-24">
+            <div className="relative p-5 md:px-24">
               <h2 className="text-3xl lg:text-4xl font-semibold transition-colors duration-700">
                 Game Dev+, VIT Pune
               </h2>
