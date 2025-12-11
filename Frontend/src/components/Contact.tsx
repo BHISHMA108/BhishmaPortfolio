@@ -6,7 +6,7 @@ function Contacts() {
   return (
     <div
       id="contacts"
-      className="relative flex flex-col justify-around min-h-[500px] px-9 lg:px-16 font-google py-[10px] w-full  md:min-h-[491px] bg-[url('/contact.png')] bg-center  bg-cover "
+      className="relative flex flex-col justify-around min-h-[500px] px-9 lg:px-16 font-google py-[10px] w-full  md:min-h-[491px] bg-[url('/newcontact.png')] bg-center  bg-cover "
     >
       <h1 className="z-10 text-5xl lg:text-5xl font-medium font-google text-black relative mt-12">
         Contacts

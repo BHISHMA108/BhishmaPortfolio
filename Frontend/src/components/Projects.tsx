@@ -3,15 +3,15 @@ export default function mainSection() {
     <>
       <div
         id="projects"
-        className="relative font-google tracking-wider min-h-screen px-9 pt-36"
+        className="relative font-google tracking-wider bg-[url('/pro.jpg')] bg-[#384959] bg-blur-lg bg-black/10 bg-contain pb-16 rounded-4xl min-h-screen px-9 mt-11 pt-14"
       >
         <div className="z-10 relative pb-14">
-          <h1 className="lg:px-20 text-5xl lg:text-6xl font-medium">
+          <h1 className="lg:px-20 text-5xl lg:text-6xl text-black font-medium">
             Projects
           </h1>
         </div>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-start gap-7 w-full">
-          <div className="bg-[url('/pro3.jpg')] bg-center bg-cover min-h-[210px] lg:min-h-[450px] full flex flex-col p-11 gap-2 justify-start pl-3 text-white font-medium text-4xl rounded-3xl ">
+        <div className="max-w-7xl text-black mx-auto grid grid-cols-1 lg:grid-cols-2 items-start gap-7 w-full">
+          <div className="bg-[url('/pro1.jpg')] bg-center bg-cover min-h-[210px] lg:min-h-[450px] full flex flex-col p-11 gap-2 justify-start pl-3 font-medium text-4xl rounded-3xl ">
             <h1 className="text-4xl lg:text-5xl px-4">EfficienSee</h1>
             <div className="flex justify-start">
               <a
@@ -58,7 +58,7 @@ export default function mainSection() {
             </p>
           </div>
 
-          <div className="bg-[url('/pro4.jpg')] inset-0 bg-black/40 bg-center bg-cover w-full p-11 min-h-[250px] lg:min-h-[450px] flex flex-col gap-2 justify-start pl-3 text-white font-medium text-4xl rounded-3xl  ">
+          <div className="bg-[url('/pro5.jpg')]  bg-center bg-cover w-full p-11 min-h-[250px] lg:min-h-[450px] flex flex-col gap-2 justify-start pl-3 font-medium text-4xl rounded-3xl  ">
             <h1 className="text-4xl lg:text-5xl px-4">Gyansetu</h1>
             <div className="flex justify-start">
               <a

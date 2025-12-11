@@ -1,8 +1,12 @@
 function Skills() {
 
   return (
-    <div id="skills" className="min-h-screen font-google relative bg-[url('/skillsbg.png')] bg-cover">
-        <h1 className='z-10 relative px-9 lg:px-28 text-5xl lg:text-6xl font-medium'>Skills</h1>
+    <div id="skills" className="min-h-screen font-google relative bg-[url('/skillbg.png')] bg-cover">
+        <h1 className=' relative z-10 px-9 lg:px-28 text-5xl lg:text-6xl font-medium'>Skills</h1>
+
+        <div className="skillsdivbg absolute -z-50 transform scale-350 translate-y-[600px] translate-x-[1100px] h-[700px] w-[700px] blur bg-[url('/skillsbg.png')] bg-cover bg-center">
+
+        </div>
 
 
       <div className="grid grid-row-2 sm:grid-row-3 md:grid-cols-6 md:gap-7 items-center relative p-[20px] md:p-[100px]">

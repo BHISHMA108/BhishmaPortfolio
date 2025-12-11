@@ -4,6 +4,21 @@
 }
 
 @font-face {
+  font-family: "ameora";
+  src: url("./fonts/amoera.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "afacad";
+  src: url("./fonts/Afacad.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "afacadit";
+  src: url("./fonts/Afacadit.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Helios";
   src: url("./fonts/HeliosExt-Bold.otf") format("truetype");
 }
@@ -17,6 +32,19 @@
 .font-google {
   font-family: "Google Sans", sans-serif;
 }
+
+.font-ameora {
+  font-family: "ameora", sans-serif;
+}
+
+.font-afacad {
+  font-family: "afacad", sans-serif;
+}
+
+.font-afacadit {
+  font-family: "afacadit", sans-serif;
+}
+
 
 .font-helios {
   font-family: "Helios", sans-serif;
@@ -38,6 +66,39 @@
 .animate-slide {
   animation: slide 78s linear infinite;
 }
+
+@keyframes smoothRotate {
+  0% {
+    transform: rotate(0deg);
+
+  }
+  100% {
+    transform: rotate(360deg) ;
+  }
+}
+
+.skillsdivbg {
+  animation: smoothRotate 21s linear infinite;
+}
+@keyframes star {
+  0% {
+    transform: rotate(0deg);
+    border: 2px solid white;
+    scale: 1.9;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    border: 2px solid black;
+    scale: 1.9;
+  }
+}
+
+.newcursor {
+  animation: star 4s linear infinite;
+  border-radius: 50%;
+}
+
 
 @keyframes cursor {
   0% {

@@ -20,7 +20,7 @@ export default function Navbar() {
 
   const handleHover = (index: number) => {
     gsap.to(refs[index].current, {
-      borderBottomColor: "#f43f5e",
+      borderBottomColor: "#6A89A7",
       duration: 0.3,
       ease: "power2.out",
     });

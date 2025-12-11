@@ -28,7 +28,12 @@ const Form = () => {
     event.preventDefault();
 
     // FRONTEND VALIDATION
-    if (!formData.name || !formData.phone || !formData.email || !formData.message) {
+    if (
+      !formData.name ||
+      !formData.phone ||
+      !formData.email ||
+      !formData.message
+    ) {
       alert("Please fill all fields.");
       return;
     }
@@ -47,7 +52,10 @@ const Form = () => {
     }
 
     try {
-      const response = await axios.post("https://bhishmaportfolio.onrender.com/api/form", formData);
+      const response = await axios.post(
+        "https://bhishmaportfolio.onrender.com/api/form",
+        formData
+      );
 
       if (response.status === 200) {
         alert("Form submitted successfully!");
@@ -128,106 +136,133 @@ const Form = () => {
 
   return (
     <>
-    <div className="flex justify-start items-start">
-      <span onClick={() => navigate("/")} className="flex p-7 gap-2 justify-center items-start hover-target cursor-pointer">
-        <img className="object-cover h-6" src="/gobackicon.png" alt="" />
-        <p className="text-blue-600">Go Back</p>
-      </span>
-      </div>
-    <div className="relative z-0 p-9 min-h-[600px] font-google w-full flex flex-col justify-center items-center ">
-      <div
-        ref={mouseCursor}
-        className="border rounded-4xl h-11 w-11 bg-[url('/cursor.png')] bg-cover pointer-events-none r-cursor"
-        style={{
-          borderColor: "white",
-          borderStyle: "solid",
-          borderWidth: "1px",
-        }}
-      />
-      
-      <form
-        onSubmit={handleSubmit}
-        className="transition bg-[url('/formbgglass.jpg')] w-full py-7 duration-700 delay-100 ease-in-out flex justify-center bg-center bg-cover items-center rounded-4xl"
-      ><div className="flex items-center w-full justify-center">
-        <div className="p-11 md:mx-9 w-full rounded-4xl flex flex-col gap-4 backdrop-blur-2xl bg-white/20">
-          <h1 className="text-3xl font-bold">Form</h1>
-
-          {/* Name */}
-          <div>
-            <div className="h-8 gap-1 flex items-center">
-              <img className="object-cover w-6 h-6" src="/personicon.png" alt="" />
-              <h3>Name</h3>
-            </div>
-            <input
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              type="text"
-              placeholder="Enter your name"
-              className="w-full p-2 rounded-md"
-            />
-          </div>
-
-          {/* Phone */}
-          <div>
-            <div className="h-8 gap-1 flex items-center">
-              <img className="object-cover w-6 h-6" src="/contacticon.png" alt="" />
-              <h3>Phone</h3>
-            </div>
-            <input
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              type="text"
-              placeholder="Enter your phone number"
-              className="w-full p-2 rounded-md"
-            />
-          </div>
-
-          {/* Email */}
-          <div>
-            <div className="h-8 gap-1 flex items-center">
-              <img className="object-cover w-6 h-6" src="/emailicon.png" alt="" />
-              <h3>Email</h3>
-            </div>
-            <input
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              type="email"
-              placeholder="Enter your email"
-              className="w-full p-2 rounded-md"
-            />
-          </div>
-
-          {/* Message */}
-          <div>
-            <div className="h-8 gap-1 flex items-center">
-              <img className="object-cover w-6 h-6" src="/messageicon.png" alt="" />
-              <h3>Message</h3>
-            </div>
-            <input
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              type="text"
-              placeholder="Enter your message"
-              className="w-full p-2 rounded-md"
-            />
-          </div>
-
-          {/* Button */}
-          <button
-            type="submit"
-            className="hover-target rounded-3xl bg-pink-300 border-4 border-rose-600 text-black hover:bg-rose-500 hover:text-white transition-all duration-500 ease-in-out p-2"
+      <div className="flex h-screen ">
+        <div className="flex absolute z-30 justify-start items-center">
+          <span
+            onClick={() => navigate("/")}
+            className="flex p-7 gap-2 justify-center items-start hover-target cursor-pointer"
           >
-            Submit
-          </button>
+            <img className="object-cover h-6" src="/gobackicon.png" alt="" />
+            <p className="text-blue-600 font-bold font-google">Go Back</p>
+          </span>
         </div>
-      <div className="h-full w-full hidden lg:block font-bold text-8xl">"Let’s Create <span className="font-cur  text-9xl underline hover:text-rose-600 brightness-200 -underline-offset-4 hover:underline-offset-4 transition-all duration-700 delay-75 ease-in-out ">Beautiful</span> Experiences Together"</div>
+        <div className="relative z-0 lg:mt-5 lg:p-9 min-h-[600px] font-google w-full flex flex-col justify-center items-center ">
+          <div
+            ref={mouseCursor}
+            className="border relative z-50 rounded-4xl h-11 w-11 bg-[url('/star.png')] bg-center bg-cover pointer-events-none newcursor"
+            style={{
+              borderColor: "white",
+              borderStyle: "solid",
+              borderWidth: "1px",
+            }}
+          />
+
+          <form
+            onSubmit={handleSubmit}
+            className="transition bg-[url('/formbgglass.jpg')] w-full py-7 duration-700 delay-100 ease-in-out flex justify-center bg-center bg-cover items-center rounded-4xl"
+          >
+            <div className="flex items-center w-full justify-center">
+              <div className="p-11 md:mx-9 w-full rounded-4xl flex flex-col gap-4 backdrop-blur-2xl bg-white/20">
+                <h1 className="text-3xl font-bold">Form</h1>
+
+                {/* Name */}
+                <div>
+                  <div className="h-8 gap-1 flex items-center">
+                    <img
+                      className="object-cover w-6 h-6"
+                      src="/personicon.png"
+                      alt=""
+                    />
+                    <h3>Name</h3>
+                  </div>
+                  <input
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    type="text"
+                    placeholder="Enter your name"
+                    className="w-full p-2 rounded-md"
+                  />
+                </div>
+
+                {/* Phone */}
+                <div>
+                  <div className="h-8 gap-1 flex items-center">
+                    <img
+                      className="object-cover w-6 h-6"
+                      src="/contacticon.png"
+                      alt=""
+                    />
+                    <h3>Phone</h3>
+                  </div>
+                  <input
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    type="text"
+                    placeholder="Enter your phone number"
+                    className="w-full p-2 rounded-md"
+                  />
+                </div>
+
+                {/* Email */}
+                <div>
+                  <div className="h-8 gap-1 flex items-center">
+                    <img
+                      className="object-cover w-6 h-6"
+                      src="/emailicon.png"
+                      alt=""
+                    />
+                    <h3>Email</h3>
+                  </div>
+                  <input
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    type="email"
+                    placeholder="Enter your email"
+                    className="w-full p-2 rounded-md"
+                  />
+                </div>
+
+                {/* Message */}
+                <div>
+                  <div className="h-8 gap-1 flex items-center">
+                    <img
+                      className="object-cover w-6 h-6"
+                      src="/messageicon.png"
+                      alt=""
+                    />
+                    <h3>Message</h3>
+                  </div>
+                  <input
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    type="text"
+                    placeholder="Enter your message"
+                    className="w-full p-2 rounded-md"
+                  />
+                </div>
+
+                {/* Button */}
+                <button
+                  type="submit"
+                  className="hover-target rounded-3xl bg-blue-300 border-4 border-blue-600 text-black hover:bg-blue-500 hover:text-white transition-all duration-500 ease-in-out p-2"
+                >
+                  Submit
+                </button>
+              </div>
+              <div className="h-full w-full hidden lg:block font-ameora font-bold text-9xl">
+                "Let’s Make Something{" "}
+                <span className="font-ameora text-9xl underline hover:text-blue-600 brightness-200 -underline-offset-4 hover:underline-offset-4 transition-all duration-700 delay-75 ease-in-out hover:text-shadow-blue-900 ">Great<br /></span>
+                Together"
+              </div>
+              {/* <span className="font-cur  text-9xl underline hover:text-rose-600 brightness-200 -underline-offset-4 hover:underline-offset-4 transition-all duration-700 delay-75 ease-in-out "></span> */}
+            </div>
+          </form>
+        </div>
       </div>
-      </form>
-    </div>
     </>
   );
 };

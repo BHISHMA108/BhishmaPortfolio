@@ -4,101 +4,98 @@ import { gsap } from "gsap";
 export default function Intro() {
   const mouseCursor = useRef<HTMLDivElement>(null);
 
-useEffect(() => {
-  const el = mouseCursor.current;
-  if (!el) return;
+  useEffect(() => {
+    const el = mouseCursor.current;
+    if (!el) return;
 
-  // baseline style
-  Object.assign(el.style, {
-    position: "fixed",
-    left: "0px",
-    top: "0px",
-    transform: "translate(-50%, -50%)",
-    pointerEvents: "none",
-    zIndex: "9",
-  });
+    Object.assign(el.style, {
+      position: "fixed",
+      left: "0px",
+      top: "0px",
+      transform: "translate(-50%, -50%)",
+      pointerEvents: "none",
+      zIndex: "9",
+    });
 
-  // cursor target coordinates
-  let targetX = 0;
-  let targetY = 0;
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    const smoothFactor = 0.12;
 
-  // actual coordinates (for smooth lerp)
-  let currentX = 0;
-  let currentY = 0;
+    const onMove = (e: MouseEvent) => {
+      targetX = e.clientX;
+      targetY = e.clientY;
+    };
 
-  const smoothFactor = 0.12; // smaller = more smooth
+    window.addEventListener("mousemove", onMove);
 
-  const onMove = (e: MouseEvent) => {
-    targetX = e.clientX;
-    targetY = e.clientY;
-  };
+    const setLeft = gsap.quickSetter(el, "left", "px");
+    const setTop = gsap.quickSetter(el, "top", "px");
 
-  window.addEventListener("mousemove", onMove);
+    const animate = () => {
+      currentX += (targetX - currentX) * smoothFactor;
+      currentY += (targetY - currentY) * smoothFactor;
 
-  // GSAP quick setters
-  const setLeft = gsap.quickSetter(el, "left", "px");
-  const setTop = gsap.quickSetter(el, "top", "px");
+      setLeft(currentX);
+      setTop(currentY);
 
-  // animation loop (lerp)
-  const animate = () => {
-    currentX += (targetX - currentX) * smoothFactor;
-    currentY += (targetY - currentY) * smoothFactor;
+      requestAnimationFrame(animate);
+    };
+    animate();
 
-    setLeft(currentX);
-    setTop(currentY);
+    const onEnter = () =>
+      gsap.to(el, { scale: 2, duration: 0.9, ease: "power2.out" });
+    const onLeave = () =>
+      gsap.to(el, { scale: 0, duration: 0.9, ease: "power2.out" });
 
-    requestAnimationFrame(animate);
-  };
-  animate();
+    window.addEventListener("mouseenter", onEnter);
+    window.addEventListener("mouseleave", onLeave);
 
-  // hover in/out scaling
-  const onEnter = () => gsap.to(el, { scale:2, duration: 0.9, ease: "power2.out" });
-  const onLeave = () => gsap.to(el, { scale: 0, duration: 0.9, ease: "power2.out" });
+    gsap.set(el, { scale: 1.6 });
 
-  window.addEventListener("mouseenter", onEnter);
-  window.addEventListener("mouseleave", onLeave);
-
-  // initial size
-  gsap.set(el, { scale: 1.6 });
-
-  return () => {
-    window.removeEventListener("mousemove", onMove);
-    window.removeEventListener("mouseenter", onEnter);
-    window.removeEventListener("mouseleave", onLeave);
-  };
-}, []);
-
+    return () => {
+      window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("mouseenter", onEnter);
+      window.removeEventListener("mouseleave", onLeave);
+    };
+  }, []);
 
   return (
     <div
       id="home"
-    className="relative font-google min-h-screen w-full bg-center bg-[url('/firstbg.png')] bg-cover flex flex-col justify-center overflow-x-hidden">
+      className="relative font-afacad rounded-bl-4xl min-h-screen w-full bg-center bg-[url('/intro2.png')] bg-cover flex flex-col justify-center overflow-x-hidden"
+    >
       <div
         ref={mouseCursor}
-        className="border rounded-4xl h-11 w-11 bg-[url('/cursor.png')] bg-cover pointer-events-none
-        r-cursor"
+        className="border relative z-50 rounded-4xl h-11 w-11 bg-[url('/star.png')] bg-center bg-cover pointer-events-none newcursor"
         style={{
           borderColor: "white",
           borderStyle: "solid",
           borderWidth: "1px",
-          // remove Tailwind positioning classes here to avoid conflicts
         }}
       />
-      <div className="z-10  relative top-0 left-0 text-7xl md:text-8xl lg:text-9xl flex justify-start items-center font-medium pl-9 overflow-hidden">
-        <span className="relative z-10 text-black font-google">Hi, I’m</span>
-      </div>
 
-      <div className="z-10 flex justify-start items-center font-google relative h-[240px] md:h-[270px] lg:h-[380px] text-8xl md:text-[110px] lg:text-[151px] pl-3 md:pl-21 lg:pl-50 items-baseline overflow-hidden">
-        <span className="relative z-10 text-[#ff2828] font-cur">
-          Bhishma Dandekar,
-        <span className=" font-google text-black font-extralight text-2xl md:text-3xl lg:text-3xl hidden lg:block z-10">aka Uday</span>
+      <div className="flex flex-col justify-center gap-6 md:gap-9 items-center text-center px-4">
+
+        {/* Hi, I'm */}
+        <span className="text-4xl md:text-6xl lg:text-8xl">Hi, I’m</span>
+
+        {/* Uday + Bhishma */}
+        <span className="flex flex-col md:flex-row gap-2 md:gap-4 items-center">
+          <span className="rounded-3xl text-5xl md:text-7xl lg:text-[160px]">
+            Uday Dandekar,
+          </span>
+
+          <span className="text-2xl md:text-3xl lg:text-4xl">
+            aka Bhishma
+          </span>
         </span>
-      </div>
-      <span className="text-2xl block lg:hidden pl-7 lg:pl-14 z-10">aka Uday</span>
-      <div className="z-10">
-        <p className="text-4xl font-google text-black font-light pl-7 lg:pl-14 pt- lg:pl-50">
-          Passionate Software Developer
-        </p>
+
+        {/* Subtitle */}
+        <span className="text-2xl md:text-4xl lg:text-5xl text-gray-900">
+          A Passionate Software Developer
+        </span>
       </div>
     </div>
   );

@@ -2,18 +2,18 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="flex flex-col font-google tracking-wide justify-center px-1 lg:px-36"
+      className="flex relative z-10 flex-col font-google tracking-wide justify-center px-1 lg:px-36"
     >
-      <div className="min-h-screen w-full rounded-2xl bg-white md:bg-[url('/letter.jpg')] bg-center bg-cover justify-center items-center">
+      <div className="min-h-screen w-full rounded-2xl bg-[url('/exbg.jpg')] bg-center bg-cover justify-center items-center">
         <div className="flex flex-col w-full lg:px-20 md:py-[110px] relative gap-5">
-          <h1 className="text-6xl pl-7 md:text-8xl lg:text-9xl mb-[40px] font-cur text-rose-600 relative md:mx-[100px]">
+          <h1 className="text-6xl md:text-5xl lg:text-8xl mt-11 md:mt-7 mb-[40px] font-google text-black relative mx-5 md:mx-[90px]">
             Experience
           </h1>
 
           {/* Experience Block 1 */}
-          <div className="group relative overflow-hidden flex flex-col justify-center min-h-[250px] md:min-h-[300px] text-black rounded pr-5 bg-cover border-transparent hover:border-t-2 hover:border-b-2 hover:border-pink-700 transition-all duration-700 ease-in-out">
+          <div className="group relative overflow-hidden flex flex-col justify-center min-h-[250px] md:min-h-[300px] text-black rounded pr-5 bg-cover  transition-all duration-700 ease-in-out">
             {/* Overlay */}
-            <div className="absolute inset-0 bg-[url('/gsa.png')] bg-cover bg-center opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-700 ease-in-out"></div>
+            <div className="absolute inset-0  bg-cover bg-center opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-700 ease-in-out"></div>
             {/* Content */}
             <div className="relative   px-5 md:px-24">
               <h2 className="text-3xl lg:text-4xl font-semibold transition-colors duration-700 ease-in-out">
@@ -22,6 +22,24 @@ const Experience = () => {
               <p className="mt-2">
                 <span className="font-bold">Location:</span> Pune, Maharashtra, India (Remote) <br />
                 <span className="font-bold">Duration:</span> August 2025 – Present
+              </p>
+              <p className="mt-4 text-[15px] lg:text-[18px]">
+                ● Represented Google as a Student Ambassador at VIT Pune by leading campus outreach initiatives, organizing hands-on workshops, and hosting interactive events. Successfully onboarded and engaged 200+ new users through QR-based signups, technical sessions, and community-driven activities, fostering awareness and adoption of Google’s products and ecosystem.
+              </p>
+
+            </div>
+          </div>
+
+          {/* Experience Block 2 */}
+          <div className="group relative overflow-hidden flex flex-col justify-center min-h-[250px] md:min-h-[300px] text-black rounded pr-5 bg-cover  transition-all duration-700 ease-in-out">
+            <div className="absolute inset-0  bg-cover bg-center opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-700 ease-in-out"></div>
+            <div className="relative   px-5 md:px-24">
+              <h2 className="text-3xl lg:text-4xl font-semibold transition-colors duration-700 ease-in-out">
+                Frontend Developer Intern At Herbs Magic
+              </h2>
+              <p>
+                <span className="font-bold">Location:</span> Pune, Maharashtra, India (Remote) <br />
+                <span className="font-bold">Duration:</span> March 2025 – August 2025 (6 mos)
               </p>
               <p className="mt-4 text-[15px] lg:text-[18px] list-disc">
                 ● Built the responsive frontend of the Herbs Magic website using React.js and Tailwind CSS, ensuring mobile-first design and smooth user interactions.
@@ -33,26 +51,9 @@ const Experience = () => {
             </div>
           </div>
 
-          {/* Experience Block 2 */}
-          <div className="group relative overflow-hidden flex flex-col justify-center min-h-[250px] md:min-h-[300px] text-black rounded pr-5 bg-cover border-transparent hover:border-t-2 hover:border-b-2 hover:border-pink-700 transition-all duration-700 ease-in-out">
-            <div className="absolute inset-0 bg-[url('/gsa.png')] bg-cover bg-center opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-700 ease-in-out"></div>
-            <div className="relative   px-5 md:px-24">
-              <h2 className="text-3xl lg:text-4xl font-semibold transition-colors duration-700 ease-in-out">
-                Frontend Developer Intern At Herbs Magic
-              </h2>
-              <p>
-                <span className="font-bold">Location:</span> Pune, Maharashtra, India (Remote) <br />
-                <span className="font-bold">Duration:</span> March 2025 – August 2025 (6 mos)
-              </p>
-              <p className="mt-4 text-[15px] lg:text-[18px]">
-                ● Represented Google as a Student Ambassador at VIT Pune by leading campus outreach initiatives, organizing hands-on workshops, and hosting interactive events. Successfully onboarded and engaged 200+ new users through QR-based signups, technical sessions, and community-driven activities, fostering awareness and adoption of Google’s products and ecosystem.
-              </p>
-            </div>
-          </div>
-
           {/* Experience Block 3 */}
-          <div className="group relative overflow-hidden flex flex-col justify-center min-h-[250px] md:min-h-[300px] text-black rounded pr-5 bg-cover border-transparent hover:border-t-2 hover:border-b-2 hover:border-pink-700 transition-all duration-700 ease-in-out">
-            <div className="absolute inset-0 bg-[url('/gsa.png')] bg-cover bg-center opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-700 ease-in-out"></div>
+          <div className="group relative overflow-hidden flex flex-col justify-center min-h-[250px] md:min-h-[300px] text-black rounded pr-5 bg-cover  transition-all duration-700 ease-in-out">
+            <div className="absolute inset-0  bg-cover bg-center opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-700 ease-in-out"></div>
             <div className="relative   px-5 md:px-24">
               <h2 className="text-3xl lg:text-4xl font-semibold transition-colors duration-700 ease-in-out">
                 Campus Ambassador Intern at Devtown
@@ -68,8 +69,8 @@ const Experience = () => {
           </div>
 
           {/* Experience Block 4 */}
-          <div className="group relative overflow-hidden flex flex-col justify-center min-h-[250px] md:min-h-[350px] text-black rounded pr-5 bg-cover border-transparent hover:border-t-2 hover:border-b-2 hover:border-pink-700 transition-all duration-700 ease-in-out">
-            <div className="absolute inset-0 bg-[url('/gsa.png')] bg-cover bg-center opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-700 ease-in-out"></div>
+          <div className="group relative overflow-hidden flex flex-col justify-center min-h-[250px] md:min-h-[350px] text-black rounded pr-5 bg-cover  transition-all duration-700 ease-in-out">
+            <div className="absolute inset-0  bg-cover bg-center opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-700 ease-in-out"></div>
             <div className="relative p-5 md:px-24">
               <h2 className="text-3xl lg:text-4xl font-semibold transition-colors duration-700">
                 Game Dev+, VIT Pune
