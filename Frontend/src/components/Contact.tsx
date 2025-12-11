@@ -65,7 +65,7 @@ function Contacts() {
           </span>{" "}
           <a
             className="text-[14px] md:text-[16px] pr-72 lg:text-[21px]"
-            href="https://portfolio-liyw.onrender.com/"
+            href="https://bhishma-portfolio.vercel.app/"
             target="_blank"
           >
             Bhishma's Portfolio Website
