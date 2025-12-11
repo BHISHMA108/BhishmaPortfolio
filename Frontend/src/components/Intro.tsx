@@ -14,7 +14,7 @@ export default function Intro() {
       top: "0px",
       transform: "translate(-50%, -50%)",
       pointerEvents: "none",
-      zIndex: "9",
+      zIndex: "10",
     });
 
     let targetX = 0;
@@ -62,19 +62,30 @@ export default function Intro() {
   }, []);
 
   return (
-    <div
-      id="home"
-      className="relative font-afacad rounded-bl-4xl min-h-screen w-full bg-center bg-[url('/intro2.png')] bg-cover flex flex-col justify-center overflow-x-hidden"
-    >
-      <div
+    <>
+          <div
         ref={mouseCursor}
-        className="border relative z-50 rounded-4xl h-11 w-11 bg-[url('/star.png')] bg-center bg-cover pointer-events-none newcursor"
+        className="border relative z-30 rounded-4xl h-11 w-11 bg-[url('/star.png')] bg-center bg-cover pointer-events-none newcursor"
         style={{
           borderColor: "white",
           borderStyle: "solid",
           borderWidth: "1px",
         }}
       />
+
+    <div
+      id="home"
+      className="relative z-0 font-afacad rounded-bl-4xl min-h-screen w-full bg-center bg-[url('/intro2.png')] bg-transparent bg-cover flex flex-col justify-center"
+    >
+        <div className="skillsdivbg  absolute -z-50 transform scale-50 -translate-x-[450px] -translate-y-[100px] h-[700px] w-[700px] blur-xl bg-[url('/tube.png')] bg-cover bg-center">
+
+        </div>
+        <div className="skillsdivbgrev overflow-hidden absolute z-[9999] transform scale-105 translate-x-[990px] translate-y-[300px] h-[700px] w-[700px] blur-xl bg-[url('/sphere.png')] bg-cover bg-center">
+{/* bottom right */}
+        </div>
+        <div className="skillsdivbg overflow-hidden absolute -z-50 transform scale-75 translate-x-[600px] -translate-y-[300px] h-[700px] w-[700px] blur-xl bg-[url('/cone.png')] bg-cover bg-center">
+{/* middle */}
+        </div>
 
       <div className="flex flex-col justify-center gap-6 md:gap-9 items-center text-center px-4">
 
@@ -87,7 +98,7 @@ export default function Intro() {
             Uday Dandekar,
           </span>
 
-          <span className="text-2xl md:text-3xl lg:text-4xl">
+          <span className="relative -z-40 text-2xl md:text-3xl lg:text-4xl">
             aka Bhishma
           </span>
         </span>
@@ -98,5 +109,6 @@ export default function Intro() {
         </span>
       </div>
     </div>
+    </>
   );
 }

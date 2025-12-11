@@ -80,6 +80,21 @@
 .skillsdivbg {
   animation: smoothRotate 21s linear infinite;
 }
+
+@keyframes smoothRotaterev {
+  0% {
+    transform: rotate(0deg);
+
+  }
+  100% {
+    transform: rotate(360deg) ;
+  }
+}
+
+.skillsdivbgrev {
+  animation: smoothRotaterev 21s linear infinite reverse;
+}
+
 @keyframes star {
   0% {
     transform: rotate(0deg);

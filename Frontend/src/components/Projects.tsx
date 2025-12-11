@@ -5,7 +5,7 @@ export default function mainSection() {
         id="projects"
         className="relative font-google tracking-wider bg-[url('/pro.jpg')] bg-[#384959] bg-blur-lg bg-black/10 bg-contain pb-16 rounded-4xl min-h-screen px-9 mt-11 pt-14"
       >
-        <div className="z-10 relative pb-14">
+        <div className=" relative pb-14">
           <h1 className="lg:px-20 text-5xl lg:text-6xl text-black font-medium">
             Projects
           </h1>
