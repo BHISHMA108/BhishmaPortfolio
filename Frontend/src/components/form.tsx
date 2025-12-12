@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { gsap } from "gsap";
 import { motion } from "motion/react";
-import { div } from "motion/react-client";
 
 const Form = () => {
   const mouseCursor = useRef<HTMLDivElement>(null);

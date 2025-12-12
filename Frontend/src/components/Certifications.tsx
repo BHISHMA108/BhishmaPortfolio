@@ -24,7 +24,7 @@ const Certifications = () => {
   ];
 
   return (
-    <div id="certifications" className="relative w-full font-google min-h-screen bg-cover py-20 overflow-hidden">
+    <div id="certifications" className="relative w-full font-google lg:min-h-screen bg-cover py-20 overflow-hidden">
       <h1 className="z-10 relative px-9 lg:px-28 text-5xl font-medium lg:text-6xl text-black mb-12">
         Certifications
       </h1>

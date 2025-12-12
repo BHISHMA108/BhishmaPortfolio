@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 export default function Wow() {
   const navigate = useNavigate();
   return (
-    <div className="font-google tracking-wide min-h-screen w-full flex flex-col bg-[url('/ww.png')] bg-cover bg-center relative">
+    <div className="font-google tracking-wide lg:min-h-screen w-full flex flex-col bg-[url('/ww.png')] bg-cover bg-center relative">
       <div className="skillsdivbg overflow-hidden absolute -z-50 transform scale-150 -translate-y-[200px] h-[700px] w-[700px] blur bg-[url('/cube.png')] bg-cover bg-center"></div>
       <motion.div
         initial={{ filter: "blur(10px)" }}
@@ -37,8 +37,8 @@ export default function Wow() {
         {/* Resume Button for Mobile */}
         <a
           target="__blank__"
-          href="https://drive.google.com/file/d/12PJ4LGrWzRYIGNqmQ7AQ5fz7DrFJpWxW/view?usp=sharing"
-          className="md:hidden flex w-48 justify-center rounded-3xl bg-blue-300 border-4 border-blue-500 p-3 items-center text-center text-lg lg:text-2xl font-medium text-black hover:bg-rose-500 hover:text-white transition-all duration-500 ease-in-out"
+          href="https://drive.google.com/file/d/1W3Zkl6u6mC3oAeoOAUARjkS_2bo9qDQt/view?usp=sharing"
+          className="md:hidden flex w-48 justify-center rounded-3xl bg-blue-300 border-4 border-blue-500 p-3 items-center text-center text-lg lg:text-2xl font-medium text-black hover:bg-blue-500 hover:text-white transition-all duration-500 ease-in-out"
         >
           Resume
         </a>
