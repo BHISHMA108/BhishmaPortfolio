@@ -1,12 +1,17 @@
+import { motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
 export default function Wow() {
   const navigate = useNavigate();
   return (
     <div className="font-google tracking-wide min-h-screen w-full flex flex-col bg-[url('/ww.png')] bg-cover bg-center relative">
-        <div className="skillsdivbg overflow-hidden absolute -z-50 transform scale-150 -translate-y-[200px] h-[700px] w-[700px] blur bg-[url('/cube.png')] bg-cover bg-center">
-
-        </div>
-      <div className="px-5 sm:px-9 lg:px-28 mt-20 lg:mt-32 mb-20 lg:mb-64 flex flex-col gap-8 items-start">
+      <div className="skillsdivbg overflow-hidden absolute -z-50 transform scale-150 -translate-y-[200px] h-[700px] w-[700px] blur bg-[url('/cube.png')] bg-cover bg-center"></div>
+      <motion.div
+        initial={{ filter: "blur(10px)" }}
+        whileInView={{ filter: "blur(0px)" }}
+        transition={{ duration: 1.4}}
+        viewport={{ once: true }} // important
+        className="px-5 sm:px-9 lg:px-28 mt-20 lg:mt-32 mb-20 lg:mb-64 flex flex-col gap-8 items-start"
+      >
         <h1 className="font-medium text-5xl md:text-5xl lg:text-6xl text-black">
           Let’s Connect!
         </h1>
@@ -37,7 +42,7 @@ export default function Wow() {
         >
           Resume
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 }

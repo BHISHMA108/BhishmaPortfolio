@@ -2,11 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { gsap } from "gsap";
+import { motion } from "motion/react";
+import { div } from "motion/react-client";
 
 const Form = () => {
   const mouseCursor = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
-
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -26,6 +28,7 @@ const Form = () => {
   // Handle form submission
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    setLoading(true);
 
     // FRONTEND VALIDATION
     if (
@@ -35,19 +38,23 @@ const Form = () => {
       !formData.message
     ) {
       alert("Please fill all fields.");
+      setLoading(false);
       return;
     }
     if (!/^\d{10}$/.test(formData.phone)) {
       alert("Phone number must be 10 digits.");
+      setLoading(false);
       return;
     }
     if (formData.message.length < 10) {
       alert("Message must be at least 10 characters.");
+      setLoading(false);
       return;
     }
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       alert("Please enter a valid email.");
+      setLoading(false);
       return;
     }
 
@@ -58,6 +65,7 @@ const Form = () => {
       );
 
       if (response.status === 200) {
+        setLoading(false);
         alert("Form submitted successfully!");
         setFormData({
           name: "",
@@ -77,6 +85,7 @@ const Form = () => {
         console.error("Error submitting form:", error);
       }
     }
+    setLoading(false);
   }
 
   // Cursor animation
@@ -136,6 +145,23 @@ const Form = () => {
 
   return (
     <>
+      {loading && (
+        <div className="fixed z-[99] inset-0 bg-black/45 h-full w-full flex justify-center items-center">
+          <motion.h3
+            initial={{ rotate: 0 }}
+            animate={{ rotate: 360 }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "linear",
+              repeatType: "loop",
+            }}
+            className="h-21 w-21"
+          >
+            <img src="/star2.png" alt="" />
+          </motion.h3>
+        </div>
+      )}
       <div className="flex h-screen ">
         <div className="flex absolute z-30 justify-start items-center">
           <span
@@ -146,7 +172,13 @@ const Form = () => {
             <p className="text-blue-600 font-bold font-google">Go Back</p>
           </span>
         </div>
-        <div className="relative z-0 lg:mt-5 lg:p-9 min-h-[600px] font-google w-full flex flex-col justify-center items-center ">
+        <motion.div
+          initial={{ filter: "blur(10px)" }}
+          whileInView={{ filter: "blur(0px)" }}
+          transition={{ duration: 1.4 }}
+          viewport={{ once: true }} // important
+          className="relative z-0 lg:mt-5 lg:p-9 min-h-[600px] font-google w-full flex flex-col justify-center items-center "
+        >
           <div
             ref={mouseCursor}
             className="border relative z-50 rounded-4xl h-11 w-11 bg-[url('/star.png')] bg-center bg-cover pointer-events-none newcursor"
@@ -255,13 +287,16 @@ const Form = () => {
               </div>
               <div className="h-full w-full hidden lg:block font-ameora font-bold text-9xl">
                 "Let’s Make Something{" "}
-                <span className="font-ameora text-9xl underline hover:text-blue-600 brightness-200 -underline-offset-4 hover:underline-offset-4 transition-all duration-700 delay-75 ease-in-out hover:text-shadow-blue-900 ">Great<br /></span>
+                <span className="font-ameora text-9xl underline hover:text-blue-600 brightness-200 -underline-offset-4 hover:underline-offset-4 transition-all duration-700 delay-75 ease-in-out hover:text-shadow-blue-900 ">
+                  Great
+                  <br />
+                </span>
                 Together"
               </div>
               {/* <span className="font-cur  text-9xl underline hover:text-rose-600 brightness-200 -underline-offset-4 hover:underline-offset-4 transition-all duration-700 delay-75 ease-in-out "></span> */}
             </div>
           </form>
-        </div>
+        </motion.div>
       </div>
     </>
   );

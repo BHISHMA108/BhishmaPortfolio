@@ -1,3 +1,5 @@
+import { motion } from "motion/react"
+
 const aboutMe = () => {
   return (
     <div
@@ -5,7 +7,8 @@ const aboutMe = () => {
       className="relative -z-10 flex gap-4 font-google px-9 lg:my-16 lg:px-28 min-h-[600px] md:min-h-[560px] lg:min-h-[650px] w-full  items-center bg--500 bg-cover"
     >
       <div className="w-full flex">
-      <div className=" h-full lg:min-h-[450px]  bg-[url('/.jpg')] bg-cover bg-center p-7 border border-lb-4 rounded-4xl w-full">
+      <motion.div initial={{x:-30}} whileInView={{x:0}}   viewport={{ once: true }} // important
+transition={{duration:2.5}} className=" h-full lg:min-h-[450px]  bg-[url('/.jpg')] bg-cover bg-center p-7 border border-lb-4 rounded-4xl w-full">
         <h1 className="text-4xl lg:text-6xl font-medium mb-6">About Me</h1>
         <p className="hidden md:block text-[18px] md:text-2xl lg:text-3xl font-normal tracking-wider text-justify ">
           I’m Uday Dandekar, a frontend developer and engineering student at VIT
@@ -20,9 +23,9 @@ const aboutMe = () => {
           Magic, served as a Google Student Ambassador, and built projects like
           Gyansetu and EfficienSee.
         </p>
-      </div>
+      </motion.div>
 
-      <div className="flex ml-5 relative  flex-col hidden lg:block justify-start items-center  md:text-3xl lg:text-7xl w-full rounded-4xl bg-[url('/count.jpg')] bg-cover bg-center ">
+      <motion.div initial={{x:30}} whileInView={{x:0}} transition={{duration:2.5}} className="flex ml-5 relative  flex-col hidden lg:block justify-start items-center  md:text-3xl lg:text-7xl w-full rounded-4xl bg-[url('/count.jpg')] bg-cover bg-center ">
       <div className="flex relative flex-col ml-7 h-full justify-center items-start">
         <div className="p-4 flex justify-between items-center">
           <span className="pr-6">15+</span>
@@ -56,7 +59,7 @@ const aboutMe = () => {
           <br />
         </div> */}
       </div>
-      </div>
+      </motion.div>
     </div>
     </div>
   );

@@ -1,8 +1,13 @@
+import {motion} from "motion/react";
+
+
 export default function mainSection() {
   return (
     <>
-      <div
+      <motion.div
         id="projects"
+        initial={{opacity:0, filter: "blur(10px)"}}   viewport={{ once: true }} // important
+ whileInView={{ opacity: 6.5, filter: "blur(0px)"}} transition={{duration:0.4}}  
         className="relative font-google tracking-wider bg-[url('/pro.jpg')] bg-[#384959] bg-blur-lg bg-black/10 bg-contain pb-16 rounded-4xl min-h-screen px-9 mt-11 pt-14"
       >
         <div className=" relative pb-14">
@@ -11,7 +16,8 @@ export default function mainSection() {
           </h1>
         </div>
         <div className="max-w-7xl text-black mx-auto grid grid-cols-1 lg:grid-cols-2 items-start gap-7 w-full">
-          <div className="bg-[url('/pro1.jpg')] bg-center bg-cover min-h-[210px] lg:min-h-[450px] full flex flex-col p-11 gap-2 justify-start pl-3 font-medium text-4xl rounded-3xl ">
+          <motion.div initial={{opacity:0, filter: "blur(10px)"}}   viewport={{ once: true }} // important
+ whileInView={{ opacity: 2.5, filter: "blur(0px)"}} transition={{duration:0.9}}  className="bg-[url('/pro1.jpg')] bg-center bg-cover min-h-[210px] lg:min-h-[450px] full flex flex-col p-11 gap-2 justify-start pl-3 font-medium text-4xl rounded-3xl ">
             <h1 className="text-4xl lg:text-5xl px-4">EfficienSee</h1>
             <div className="flex justify-start">
               <a
@@ -56,9 +62,10 @@ export default function mainSection() {
               dashboards for employees and team insights for managers, with all
               data stored securely in MongoDB.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="bg-[url('/pro5.jpg')]  bg-center bg-cover w-full p-11 min-h-[250px] lg:min-h-[450px] flex flex-col gap-2 justify-start pl-3 font-medium text-4xl rounded-3xl  ">
+          <motion.div initial={{opacity:0, filter: "blur(10px)"}}   viewport={{ once: true }} // important
+ whileInView={{ opacity: 2.5, filter: "blur(0px)"}} transition={{duration:1.5}}  className="bg-[url('/pro5.jpg')]  bg-center bg-cover w-full p-11 min-h-[250px] lg:min-h-[450px] flex flex-col gap-2 justify-start pl-3 font-medium text-4xl rounded-3xl  ">
             <h1 className="text-4xl lg:text-5xl px-4">Gyansetu</h1>
             <div className="flex justify-start">
               <a
@@ -108,9 +115,9 @@ export default function mainSection() {
               religions—built with React, Node.js, and MongoDB for a modern
               spiritual experience.
             </p>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

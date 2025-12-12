@@ -1,6 +1,14 @@
+import { motion } from "motion/react"
+
+
 const Quote = () => {
   return (
-    <div className="flex flex-wrap min-h-[100px] md:min-h-[300px] my-16 lg:min-h-[400px] h-auto text-black font-bold w-full justify-center p-7 items-center text-center font-ameora">
+    <motion.div
+  initial={{ filter: "blur(10px)" }}
+  whileInView={{ filter: "blur(0px)" }}
+  transition={{ duration: 1.4 }}
+  viewport={{ once: true }} // important
+     className="flex flex-wrap min-h-[100px] md:min-h-[300px] my-16 lg:min-h-[400px] h-auto text-black font-bold w-full justify-center p-7 items-center text-center font-ameora">
       <span className="relative z-10 text-4xl md:text-6xl lg:text-7xl">
         "Every
       </span>{" "}
@@ -18,7 +26,7 @@ const Quote = () => {
       <span className="relative z-10 text-4xl md:text-6xl lg:text-7xl">
         is a hidden mentor."
       </span>
-    </div>
+    </motion.div>
   );
 };
 

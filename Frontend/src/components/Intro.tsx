@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import { motion } from "motion/react"
 
 export default function Intro() {
   const mouseCursor = useRef<HTMLDivElement>(null);
@@ -63,7 +64,7 @@ export default function Intro() {
 
   return (
     <>
-          <div
+      <div
         ref={mouseCursor}
         className="border relative z-30 rounded-4xl h-11 w-11 bg-[url('/star.png')] bg-center bg-cover pointer-events-none newcursor"
         style={{
@@ -90,23 +91,23 @@ export default function Intro() {
       <div className="flex flex-col justify-center gap-6 md:gap-9 items-center text-center px-4">
 
         {/* Hi, I'm */}
-        <span className="text-4xl md:text-6xl lg:text-8xl">Hi, I’m</span>
+        <motion.span initial={{opacity:0, filter: "blur(10px)"}} animate={{ opacity: 2.5, filter: "blur(0px)"}} transition={{duration:1}}  className="text-4xl md:text-6xl lg:text-8xl">Hi, I’m</motion.span>
 
         {/* Uday + Bhishma */}
         <span className="flex flex-col md:flex-row gap-2 md:gap-4 items-center">
-          <span className="rounded-3xl text-5xl md:text-7xl lg:text-[160px]">
+          <motion.span initial={{opacity: 0, filter: "blur(10px)"}} animate={{opacity: 2.5, filter: "blur(0px)"}} transition={{duration:1, delay: 0.5}} className="rounded-3xl text-5xl md:text-7xl lg:text-[160px]">
             Uday Dandekar,
-          </span>
+          </motion.span>
 
-          <span className="relative -z-40 text-2xl md:text-3xl lg:text-4xl">
+          <motion.span initial={{opacity: 0, filter: "blur(10px)"}} animate={{opacity: 2.5, filter: "blur(0px)"}} transition={{duration:1, delay: 0.5}} className="relative -z-40 text-2xl md:text-3xl lg:text-4xl">
             aka Bhishma
-          </span>
+          </motion.span>
         </span>
 
         {/* Subtitle */}
-        <span className="text-2xl md:text-4xl lg:text-5xl text-gray-900">
+        <motion.span initial={{opacity: 0, filter: "blur(10px)"}} animate={{opacity: 2.5, filter: "blur(0px)"}} transition={{duration:1, delay: 0.9}} className="text-2xl md:text-4xl lg:text-5xl text-gray-900">
           A Passionate Software Developer
-        </span>
+        </motion.span>
       </div>
     </div>
     </>
