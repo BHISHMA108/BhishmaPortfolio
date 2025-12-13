@@ -1,3 +1,5 @@
+import {motion} from 'motion/react';
+
 function Skills() {
 
   return (
@@ -10,7 +12,8 @@ function Skills() {
 
 
       <div className="grid grid-row-2 sm:grid-row-3 md:grid-cols-6 md:gap-7 items-center relative p-[20px] md:p-[100px]">
-        <div 
+        <motion.div 
+        
           onTouchStart={(e)=>e.currentTarget.classList.add("!scale-[1.03]")}
           onTouchEnd={(e)=>e.currentTarget.classList.remove("!scale-[1.03]")}
           className="col-span-2 hover:bg-[#006EBB] hover:shadow-2xl hover:shadow-[#006EBB] active:bg-[#006EBB] active:shadow-2xl active:shadow-[#006EBB] focus:bg-[#006EBB] focus:shadow-2xl focus:shadow-[#006EBB] transition duration-500 p-2 rounded-3xl">
@@ -20,7 +23,7 @@ function Skills() {
             loading="lazy"
             alt=""
           />
-        </div>
+        </motion.div>
 
         <div 
           onTouchStart={(e)=>e.currentTarget.classList.add("!scale-[1.03]")}
