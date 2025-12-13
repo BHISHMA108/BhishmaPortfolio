@@ -76,14 +76,14 @@ function Contacts() {
           <img className=" w-9 h-9 bg-black rounded-4xl" src="/LeetCode.png" alt="" />
           <p className="text-blue-900">
             <span className="font-bold text-[16px] lg:text-[21px] text-black">
-              Portfolio:{" "}
+              Leetcode Profile:{" "}
             </span>{" "}
             <a
               className="text-[14px] md:text-[16px] pr-72 lg:text-[21px]"
               href="https://leetcode.com/u/w2MsuZh0n3/"
               target="_blank"
             >
-              Leetcode Profile
+              Leetcode Profile link
             </a>
           </p>
         </div>
@@ -91,14 +91,14 @@ function Contacts() {
           <img className=" w-9 h-9 bg-center bg-cover" src="/HackerRank.png" alt="" />
           <p className="text-blue-900">
             <span className="font-bold text-[16px] lg:text-[21px] text-black">
-              Portfolio:{" "}
+              Hackerrank Profile:{" "}
             </span>{" "}
             <a
               className="text-[14px] md:text-[16px] pr-72 lg:text-[21px]"
               href="https://www.hackerrank.com/profile/bhishmadandekar1"
               target="_blank"
             >
-              Hackerrank Profile
+              Hackerrank Profile link
             </a>
           </p>
         </div>
