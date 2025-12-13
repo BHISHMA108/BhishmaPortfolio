@@ -20,13 +20,19 @@ const Experience = () => {
                 Google Student Ambassador at Google
               </h2>
               <p className="mt-2">
-                <span className="font-bold">Location:</span> Pune, Maharashtra, India (Remote) <br />
-                <span className="font-bold">Duration:</span> August 2025 – Present
+                <span className="font-bold">Location:</span> Pune, Maharashtra,
+                India (Remote) <br />
+                <span className="font-bold">Duration:</span> August 2025 –
+                Present
               </p>
               <p className="mt-4 text-[15px] lg:text-[18px]">
-                ● Represented Google as a Student Ambassador at VIT Pune by leading campus outreach initiatives, organizing hands-on workshops, and hosting interactive events. Successfully onboarded and engaged 200+ new users through QR-based signups, technical sessions, and community-driven activities, fostering awareness and adoption of Google’s products and ecosystem.
+                ● Represented Google as a Student Ambassador at VIT Pune by
+                leading campus outreach initiatives, organizing hands-on
+                workshops, and hosting interactive events. Successfully
+                onboarded and engaged 250+ new users through QR-based signups,
+                technical sessions, and community-driven activities, fostering
+                awareness and adoption of Google’s products and ecosystem.
               </p>
-
             </div>
           </div>
 
@@ -38,15 +44,21 @@ const Experience = () => {
                 Frontend Developer Intern At Herbs Magic
               </h2>
               <p>
-                <span className="font-bold">Location:</span> Pune, Maharashtra, India (Remote) <br />
-                <span className="font-bold">Duration:</span> March 2025 – August 2025 (6 mos)
+                <span className="font-bold">Location:</span> Pune, Maharashtra,
+                India (Remote) <br />
+                <span className="font-bold">Duration:</span> March 2025 – August
+                2025 (6 mos)
               </p>
               <p className="mt-4 text-[15px] lg:text-[18px] list-disc">
-                ● Built the responsive frontend of the Herbs Magic website using React.js and Tailwind CSS, ensuring mobile-first design and smooth user interactions.
+                ● Developed a responsive frontend using Next.js, React Query,
+                and Tailwind CSS, and configured Nginx for reverse proxying and
+                production deployment.
                 <br />
-                ● Collaborated closely with design and backend teams to implement UI/UX improvements, optimize performance, and maintain clean, reusable component-based architecture.
-                <br />
-                ● Integrated dynamic content using APIs and contributed to accessibility and SEO enhancements.
+                ● Collaborated closely with design and backend teams to
+                implement UI/UX improvements, optimize performance, and maintain
+                clean, reusable component-based architecture.
+                <br />● Integrated dynamic content using APIs and contributed to
+                accessibility and SEO enhancements.
               </p>
             </div>
           </div>
@@ -59,11 +71,18 @@ const Experience = () => {
                 Campus Ambassador Intern at Devtown
               </h2>
               <p>
-                <span className="font-bold">Location:</span> Pune, Maharashtra, India (Remote) <br />
-                <span className="font-bold">Duration:</span> Feb 2025 – Feb 2025 (1 month)
+                <span className="font-bold">Location:</span> Pune, Maharashtra,
+                India (Remote) <br />
+                <span className="font-bold">Duration:</span> Feb 2025 – Feb 2025
+                (1 month)
               </p>
               <p className="mt-4 text-[15px] lg:text-[18px]">
-                ● Served as a liaison between Devtown and my campus, promoting workshops, events, and learning initiatives. Helped strengthen the student tech community by sharing updates, networking opportunities, and industry insights. Developed marketing, leadership, and community-building skills while managing outreach and engagement activities.
+                ● Served as a liaison between Devtown and my campus, promoting
+                workshops, events, and learning initiatives. Helped strengthen
+                the student tech community by sharing updates, networking
+                opportunities, and industry insights. Developed marketing,
+                leadership, and community-building skills while managing
+                outreach and engagement activities.
               </p>
             </div>
           </div>
@@ -76,20 +95,38 @@ const Experience = () => {
                 Game Dev+, VIT Pune
               </h2>
               <p>
-                <span className="font-bold">Location:</span> Pune, Maharashtra, India <br />
-                <span className="font-bold">Duration:</span> Nov 2023 – Jun 2025 (1 yr 8 mos)
+                <span className="font-bold">Location:</span> Pune, Maharashtra,
+                India <br />
+                <span className="font-bold">Duration:</span> Nov 2023 – Jun 2025
+                (1 yr 8 mos)
               </p>
 
               <div className="w-full md:w-[86%] mt-4">
-                <p className="text-[18px] lg:text-2xl font-semibold">Level Designing and Ideation Head</p>
-                <p className="text-base">Part-time · Aug 2024 – Jun 2025 · 11 Months</p>
-                <p className="text-[15px] lg:text-[18px]">● Spearheaded the creation of innovative game levels, incorporating user feedback. Coordinated brainstorming sessions, mentored junior members, and enhanced gameplay.</p>
+                <p className="text-[18px] lg:text-2xl font-semibold">
+                  Level Designing and Ideation Head
+                </p>
+                <p className="text-base">
+                  Part-time · Aug 2024 – Jun 2025 · 11 Months
+                </p>
+                <p className="text-[15px] lg:text-[18px]">
+                  ● Spearheaded the creation of innovative game levels,
+                  incorporating user feedback. Coordinated brainstorming
+                  sessions, mentored junior members, and enhanced gameplay.
+                </p>
 
                 <br />
 
-                <p className="text-[18px] lg:text-2xl font-semibold">Level Designing and Ideation Coordinator</p>
-                <p className="text-base">Part-time · Nov 2023 – Sep 2024 · 11 Months</p>
-                <p className="text-[15px] lg:text-[18px]">● Assisted in conceptualizing and designing engaging game levels aligned with gameplay mechanics. Facilitated cross-functional team discussions and refined level flow.</p>
+                <p className="text-[18px] lg:text-2xl font-semibold">
+                  Level Designing and Ideation Coordinator
+                </p>
+                <p className="text-base">
+                  Part-time · Nov 2023 – Sep 2024 · 11 Months
+                </p>
+                <p className="text-[15px] lg:text-[18px]">
+                  ● Assisted in conceptualizing and designing engaging game
+                  levels aligned with gameplay mechanics. Facilitated
+                  cross-functional team discussions and refined level flow.
+                </p>
               </div>
             </div>
           </div>
