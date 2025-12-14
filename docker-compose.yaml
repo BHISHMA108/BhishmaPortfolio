@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  frontend:
+    build: ./frontend
+    ports: 
+      - "5000:80"
+  
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URI=mongodb+srv://bhishmadandekar:lHaWRxmTs0Ya8M1O@cluster0.dppci.mongodb.net/Portfolio_Users?retryWrites=true&w=majority&appName=Cluster0
+    depends_on:
+      - frontend
