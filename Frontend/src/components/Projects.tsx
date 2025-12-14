@@ -59,7 +59,7 @@ export default function mainSection() {
             <p className="block md:hidden font-extralight text-[17px]  lg:text-2xl p-5">
               <span className="text-[11px] lg:text-[15px]">
                 <span className="text-red-500 font-medium">TechStack: </span>{" "}
-                MERN, Framer Motion, JavaScript, Tailwind CSS, Locomotive.js, Shadcn, Machine
+                MERN, Framer Motion, JavaScript, Tailwind CSS, Locomotive.js, ShadcnUI, Machine
                 Learning{" "}
               </span>{" "}
               &nbsp; <br />
@@ -99,7 +99,7 @@ export default function mainSection() {
               <span className="text-[15px]">
                 {" "}
                 <span className="text-red-500 font-medium">TechStack: </span>
-                Docker, MERN, Framer Motion, JavaScript, Firebase, OpenAI API, Tailwind CSS, Locomotive.js, Shadcn,
+                Docker, MERN, Framer Motion, JavaScript, Firebase, OpenAI API, Tailwind CSS, Locomotive.js, ShadcnUI,
                 Machine Learning{" "}
               </span>{" "}
               &nbsp; <br />
@@ -117,7 +117,7 @@ export default function mainSection() {
               <span className="text-[11px] lg:text-[15px]">
                 {" "}
                 <span className="text-red-500 font-medium">TechStack: </span>
-                Docker, MERN, Framer Motion, JavaScript, Firebase, OpenAI API, Tailwind CSS, Locomotive.js, Shadcn,
+                Docker, MERN, Framer Motion, JavaScript, Firebase, OpenAI API, Tailwind CSS, Locomotive.js, ShadcnUI,
                 Machine Learning{" "}
               </span>{" "}
               &nbsp; <br />
