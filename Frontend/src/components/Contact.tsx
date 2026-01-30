@@ -57,7 +57,7 @@ function Contacts() {
             </a>
           </p>
         </div>
-        <div className="flex gap-2 justify-start items-center">
+        {/* <div className="flex gap-2 justify-start items-center">
           <img className=" w-9 h-9" src="/portfolio.png" alt="" />
           <p className="text-blue-900">
             <span className="font-bold text-[16px] lg:text-[21px] text-black">
@@ -71,7 +71,7 @@ function Contacts() {
               Bhishma's Portfolio Website
             </a>
           </p>
-        </div>
+        </div> */}
                 <div className="flex gap-2 justify-start items-center">
           <img className=" w-9 h-9 bg-black rounded-4xl" src="/LeetCode.png" alt="" />
           <p className="text-blue-900">

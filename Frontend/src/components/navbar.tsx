@@ -12,7 +12,7 @@ export default function Navbar() {
     {
       name: "Resume",
       id: null,
-      link: "https://drive.google.com/file/d/1W3Zkl6u6mC3oAeoOAUARjkS_2bo9qDQt/view?usp=sharing",
+      link: "https://drive.google.com/file/d/1gYrxOuOMZCHMuQ6nt0PXg8ojryO4Y9GU/view?usp=sharing",
     },
   ];
 

@@ -9,11 +9,11 @@ const Quote = () => {
   transition={{ duration: 1.4 }}
   viewport={{ once: true }} // important
      className="flex flex-wrap min-h-[100px] md:min-h-[300px] my-16 lg:min-h-[400px] h-auto text-black font-bold w-full justify-center p-7 items-center text-center font-ameora">
-      <span className="relative z-10 text-4xl md:text-6xl lg:text-7xl">
+      <span className="relative flex justify-end z-10 text-4xl md:text-6xl lg:text-7xl">
         "Every
       </span>{" "}
       <span
-        className="group relative text-4xl md:text-6xl lg:text-7xl font-afacad font-extralight rounded-3xl m-3
+        className="group relative text-4xl md:text-6xl lg:text-7xl font-afacad font-extralight rounded-3xl md:m-3
           text-red-600
           transition duration-700 ease-in-out
           hover:text-white hover:bg-blue-600

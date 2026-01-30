@@ -37,7 +37,7 @@ export default function Wow() {
         {/* Resume Button for Mobile */}
         <a
           target="__blank__"
-          href="https://drive.google.com/file/d/1W3Zkl6u6mC3oAeoOAUARjkS_2bo9qDQt/view?usp=sharing"
+          href="https://drive.google.com/file/d/1gYrxOuOMZCHMuQ6nt0PXg8ojryO4Y9GU/view?usp=sharing"
           className="md:hidden flex w-48 justify-center rounded-3xl bg-blue-300 border-4 border-blue-500 p-3 items-center text-center text-lg lg:text-2xl font-medium text-black hover:bg-blue-500 hover:text-white transition-all duration-500 ease-in-out"
         >
           Resume

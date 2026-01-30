@@ -1,17 +1,17 @@
 
 const Certifications = () => {
   const certificates = [
+    "/c2.png",
+    "/merit.png",
+    "/c3.png",
+    "/link2.png",
+    "/jp.png",
     "/nvidia.png",
     "/meta.png",
     "/c1.png",
     "/iit.png",
     "/c4.png",
     "/link1.png",
-    "/c2.png",
-    "/merit.png",
-    "/c3.png",
-    "/link2.png",
-    "/jp.png",
     "/c5.png",
     "/ot1.png",
     "/c6.png",

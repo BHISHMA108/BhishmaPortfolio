@@ -16,18 +16,18 @@ const aboutMe = () => {
         >
           <h1 className="text-4xl lg:text-6xl font-medium mb-6">About Me</h1>
           <p className="hidden md:block text-[18px] md:text-2xl lg:text-3xl font-normal tracking-wider text-justify ">
-            I’m Uday Dandekar, an engineering student at VIT Pune with hands-on
+            I’m Uday Dandekar, a final year engineering student at VIT Pune with hands-on
             experience in building scalable web applications using React,
             Tailwind CSS, Docker, and the MERN stack. I’ve worked as a Frontend
-            Intern at Herbs Magic, contributed to production-grade projects like
+            Developer Intern at Herbs Magic, contributed to production-grade projects like
             GyanSetu and EfficienSee, and currently serve as a Google Student
-            Ambassador. I’m particularly interested in AI-driven and 3D web
-            experiences and enjoy solving real-world engineering problems.
+            Ambassador. I’m particularly interested in frontend development, building interactive and responsive UIs 
+            with AI-driven features to solve real-world engineering problems.
           </p>
           <p className="block md:hidden text-2xl  lg:text-3xl tracking-wider   ">
-            I’m Uday Dandekar, a frontend-focused software developer and
+            I’m Uday Dandekar, a frontend-focused software developer and final year
             engineering student at VIT Pune, specializing in React, Tailwind
-            CSS, and Docker. I’ve previously interned at Herbs Magic, currently
+            CSS, and Docker. I’ve interned at Herbs Magic, currently
             serve as a Google Student Ambassador, and have built projects like
             GyanSetu and EfficienSee.
           </p>
@@ -42,7 +42,15 @@ const aboutMe = () => {
         >
           <div className="flex relative flex-col ml-7 h-full justify-center items-start">
             <div className="p-4 flex justify-between items-center">
-              <span className="pr-6">15+</span>
+              <span className="pr-6">11+</span>
+              <span className="lg:text-3xl text-2xl">
+                React Projects Completed
+              </span>
+              <br />
+            </div>
+
+            <div className="p-4 flex justify-between items-center">
+              <span className="pr-6">5+</span>
               <span className="lg:text-3xl text-2xl">
                 MERN Projects Completed
               </span>
@@ -62,14 +70,14 @@ const aboutMe = () => {
           <br />
         </div> */}
             <div className="p-4 flex justify-between items-center">
-              <span className="pr-5">280+</span>
+              <span className="pr-5">382+</span>
               <span className="lg:text-3xl text-2xl">
                 LeetCode Problems Solved
               </span>
               <br />
             </div>
             <div className="p-4 flex justify-between items-center">
-              <span className="pr-5">1600+</span>
+              <span className="pr-5">1680+</span>
               <span className="lg:text-3xl text-2xl"> Ranked in Leetcode</span>
               <br />
             </div>
