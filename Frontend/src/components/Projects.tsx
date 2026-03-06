@@ -23,7 +23,7 @@ export default function mainSection() {
             viewport={{ once: true }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 1.5 }}
-            className=" bg-[url('/magic.jpg')] p-11 min-h-[250px] lg:min-h-[450px] flex flex-col gap-2 justify-start pl-3 font-medium text-4xl rounded-3xl"
+            className=" bg-[url('/pro5.jpg')] p-11 min-h-[250px] lg:min-h-[450px] flex flex-col gap-2 justify-start pl-3 font-medium text-4xl rounded-3xl"
           >
             <h1 className="text-4xl lg:text-5xl px-4">Herbs Magic</h1>
 
@@ -92,7 +92,7 @@ export default function mainSection() {
             viewport={{ once: true }} // important
             whileInView={{ opacity: 2.5, filter: "blur(0px)" }}
             transition={{ duration: 0.9 }}
-            className="bg-[url('/pro1.jpg')] bg-center bg-cover min-h-[210px] lg:min-h-[450px] h-full flex flex-col p-11 gap-2 justify-start pl-3 font-medium text-4xl rounded-3xl "
+            className="bg-[url('/pro5.jpg')] bg-center bg-cover min-h-[210px] lg:min-h-[450px] h-full flex flex-col p-11 gap-2 justify-start pl-3 font-medium text-4xl rounded-3xl "
           >
             <h1 className="text-4xl lg:text-5xl px-4">EfficienSee</h1>
             <div className="flex justify-start">
@@ -147,7 +147,7 @@ export default function mainSection() {
             viewport={{ once: true }} // important
             whileInView={{ opacity: 2.5, filter: "blur(0px)" }}
             transition={{ duration: 1.5 }}
-            className="bg-[url('/pro5.jpg')]  bg-center bg-cover w-full p-11 min-h-[250px] lg:min-h-[450px] flex flex-col gap-2 justify-start pl-3 font-medium text-4xl rounded-3xl  "
+            className="bg-[url('/pro1.jpg')]  bg-center bg-cover w-full p-11 min-h-[250px] lg:min-h-[450px] flex flex-col gap-2 justify-start pl-3 font-medium text-4xl rounded-3xl  "
           >
             <h1 className="text-4xl lg:text-5xl px-4">Gyansetu</h1>
             <div className="flex justify-start">

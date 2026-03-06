@@ -80,7 +80,7 @@ function Contacts() {
             </span>{" "}
             <a
               className="text-[14px] md:text-[16px] pr-72 lg:text-[21px]"
-              href="https://leetcode.com/u/w2MsuZh0n3/"
+              href="https://leetcode.com/u/Jai_Shri_Ram_108/"
               target="_blank"
             >
               Leetcode Profile link

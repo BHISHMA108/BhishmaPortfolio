@@ -23,7 +23,7 @@ const Experience = () => {
                 <span className="font-bold">Location:</span> Pune, Maharashtra,
                 India (Remote) <br />
                 <span className="font-bold">Duration:</span> August 2025 –
-                Present
+                December 2025 (5 mos)
               </p>
               <p className="mt-4 text-[15px] lg:text-[18px]">
                 ● Represented Google as a Student Ambassador at VIT Pune by

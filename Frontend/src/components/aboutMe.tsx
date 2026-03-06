@@ -16,20 +16,22 @@ const aboutMe = () => {
         >
           <h1 className="text-4xl lg:text-6xl font-medium mb-6">About Me</h1>
           <p className="hidden md:block text-[18px] md:text-2xl lg:text-3xl font-normal tracking-wider text-justify ">
-            I’m Uday Dandekar, a final year engineering student at VIT Pune with hands-on
-            experience in building scalable web applications using React,
-            Tailwind CSS, Docker, and the MERN stack. I’ve worked as a Frontend
-            Developer Intern at Herbs Magic, contributed to production-grade projects like
-            GyanSetu and EfficienSee, and currently serve as a Google Student
-            Ambassador. I’m particularly interested in frontend development, building interactive and responsive UIs 
-            with AI-driven features to solve real-world engineering problems.
+            I’m Uday Dandekar, a final-year engineering student at VIT Pune with
+            hands-on experience building scalable web applications using React,
+            Tailwind CSS, Docker, and the MERN stack. I have worked as a
+            Frontend Developer Intern at Herbs Magic, contributed to
+            production-grade projects such as GyanSetu and EfficienSee, and
+            served as a Google Student Ambassador. I’m particularly interested
+            in frontend development and enjoy building interactive, responsive
+            UIs with AI-driven features to solve real-world engineering
+            problems.
           </p>
           <p className="block md:hidden text-2xl  lg:text-3xl tracking-wider   ">
-            I’m Uday Dandekar, a frontend-focused software developer and final year
-            engineering student at VIT Pune, specializing in React, Tailwind
-            CSS, and Docker. I’ve interned at Herbs Magic, currently
-            serve as a Google Student Ambassador, and have built projects like
-            GyanSetu and EfficienSee.
+            I’m Uday Dandekar, a frontend-focused software developer and final
+            year engineering student at VIT Pune, specializing in React,
+            Tailwind CSS, and Docker. I’ve interned at Herbs Magic, served as a
+            Google Student Ambassador, and have built projects like GyanSetu and
+            EfficienSee.
           </p>
         </motion.div>
 
@@ -70,15 +72,15 @@ const aboutMe = () => {
           <br />
         </div> */}
             <div className="p-4 flex justify-between items-center">
-              <span className="pr-5">382+</span>
+              <span className="pr-5">460+</span>
               <span className="lg:text-3xl text-2xl">
                 LeetCode Problems Solved
               </span>
               <br />
             </div>
             <div className="p-4 flex justify-between items-center">
-              <span className="pr-5">1680+</span>
-              <span className="lg:text-3xl text-2xl"> Ranked in Leetcode</span>
+              <span className="pr-5">1691+</span>
+              <span className="lg:text-3xl text-2xl"> Rating in Leetcode</span>
               <br />
             </div>
             {/* <div>
